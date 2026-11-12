@@ -75,9 +75,9 @@ spec:
         volumeMounts:
         - name: mysql
           mountPath: /var/lib/mysql
-      envFrom:
-      - secretRef:
-          name: mysql
+        envFrom:
+        - secretRef:
+            name: mysql
   volumeClaimTemplates:
   - metadata:
       name: mysql

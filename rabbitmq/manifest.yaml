@@ -76,9 +76,9 @@ spec:
         volumeMounts:
         - name: rabbitmq
           mountPath: /var/lib/rabbitmq
-      envFrom:
-      - secretRef:
-          name: rabbitmq
+        envFrom:
+        - secretRef:
+            name: rabbitmq
   volumeClaimTemplates:
   - metadata:
       name: rabbitmq
